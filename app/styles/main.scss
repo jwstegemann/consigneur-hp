@@ -1,0 +1,16 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+
+body {
+    padding: 0;
+    font-size: 16px;
+}
+
+.navbar-logo {
+  padding-top: 0.25em !important;
+  padding-bottom: 0.25em !important;
+}
+
+
