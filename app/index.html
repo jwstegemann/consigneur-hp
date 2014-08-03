@@ -12,6 +12,8 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -49,10 +51,9 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav pull-right">
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Vorteile</a></li>
-                        <li><a href="#">Demos</a></li>
-                        <li><a href="#">Anmeldung</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                        <li><a href="#register">Jetzt anmelden</a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
@@ -77,14 +78,89 @@
                 </div>
             </div>        
 
-            <form class="register-form" action="/wp-content/themes/whiteboard/processor.php" method="post">
-                        <fieldset>
-                            <div class="row">
-                                <input type="email" name="email" id="email" placeholder="Enter your email address">
-                            </div>
-                            <input type="submit" value="Sign up for Free">
-                        </fieldset>
-                    </form>    
+            <a name="features"></a>
+            <div class="row section section">
+                <div class="col-md-5 col-md-offset-1">
+                    <img class="section-image" src="images/screen_suche.png"></img>
+                </div>
+                <div class="col-md-5">
+                    <p class="section-header">Ein ganz tolles Feature</p>
+                    <p class="section-details">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus...</p>
+                </div>
+            </div>
+
+            <div class="row section">
+                <div class="col-md-5 col-md-offset-1">
+                    <p class="section-header">Haben Sie im Meeting immer alle Informationen parat!</p>
+                    <p class="section-details">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus...</p>                    
+                </div>
+                <div class="col-md-5">
+                    <img class="section-image" src="images/meeting.jpg"></img>
+                </div>
+            </div>
+
+            <div class="row section section">
+                <div class="col-md-5 col-md-offset-1">
+                    <img class="section-image" src="images/screen_share.png"></img>
+                </div>
+                <div class="col-md-5">
+                    <p class="section-header">Teilen Sie Ihre Daten mit wem sie wollen!</p>
+                    <p class="section-details">Tauschen Sie sicher und zuverlässig Daten, Ideen, Dokumente, etc. mit Ihren Geschäftspartnern, Familienmitgliedern, Nachbarn oder Freunden aus.</p>
+                </div>
+            </div>
+
+            <div class="row section">
+                <div class="col-md-5 col-md-offset-1">
+                    <p class="section-header">Arbeiten Sie wann und wo Sie möchten</p>
+                    <p class="section-details">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>                    
+                </div>
+                <div class="col-md-5">
+                    <img class="section-image" src="images/kaffee.jpg"></img>
+                </div>
+            </div>
+
+            <div class="row section section">
+                <div class="col-md-5 col-md-offset-1">
+                    <img class="section-image" src="images/screen_assist.png"></img>
+                </div>
+                <div class="col-md-5">
+                    <p class="section-header">Am Ende noch mal was Grandioses</p>
+                    <p class="section-details">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                </div>
+            </div>
+
+            <a name="register"></a>
+            <div class="row section register">
+                <div class="col-md-6 col-md-offset-3">
+                    <form class="form-inline" role="form">
+                      <div class="form-group col-sm-8">
+                        <input type="email" class="form-control input-lg" id="exampleInputEmail2" placeholder="Ihre eMail-Adresse">
+                      </div>
+                      <button type="submit" class="btn btn-lg btn-default">
+                        JETZT ANMELDEN
+                      </button>
+                    </form>
+                </div>
+            </div>
+
+            <a name="contact"></a>
+            <div class="row section">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="narrative">Bleiben Sie in Kontakt mit uns:</p>
+                    <p class="contact">
+                        <i class="fa fa-twitter fa-2x" style="color: #309AEA"></i>&nbsp;&nbsp;
+                        <i class="fa fa-facebook-square fa-2x" style="color: #30487B"></i>&nbsp;&nbsp;
+                        <i class="fa fa-xing fa-2x" style="color: #dae600"></i>&nbsp;&nbsp;
+                        <i class="fa fa-google-plus-square fa-2x" style="color: #CA3523"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row section section-grey">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="copyright">(c) 2014 by WieAuchImmerWirHeißen</p>
+                </div>
+            </div>
 
         </div>
         <!-- Features -->        
@@ -93,6 +169,7 @@
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/sass-bootstrap/dist/js/bootstrap.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 

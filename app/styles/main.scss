@@ -31,7 +31,7 @@ body {
   font-size: 16px;
   font-family: $font;
   font-weight: 300;
-  background: #f9f9f9;
+  background-color: #f9f9f9;
   color: $text-dark;
 }
 
@@ -71,3 +71,89 @@ body {
   margin-top: 40px;
   box-shadow: $whiteframe-shadow-z2;
 }
+
+.btn-default {
+  border-radius: $button-border-radius;
+  box-shadow: $whiteframe-shadow-z1;
+  color: white;
+  background-color: $color-green;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+input.form-control {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: $card-border;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 0;
+  box-shadow: none;
+  padding-bottom: 2px;
+}
+
+input.form-control:focus {
+  box-shadow: none;
+  border-bottom: 2px solid $color-light-blue;
+}
+
+.register {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section {
+  padding-top: 40px;
+  border-top: $card-border;
+  padding-bottom: 40px;
+}
+
+.section-dark {
+  background-color: $color-indigo;
+
+  .section-header {
+    color: $text-light;
+  }
+
+  .section-details {
+    color: $text-light;
+  }
+}
+
+.section-image {
+  max-width: 100%;
+  width: 100%;
+  margin-right: 20px;
+  box-shadow: $whiteframe-shadow-z2;  
+}
+
+.section-header {
+  font-size: 34px;
+  margin-left: 20px;
+}
+
+.section-details {
+  color: $text-grey;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.section-grey {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background-color: #f9f9f9; 
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
+  color: $text-grey;
+  font-size: 14px;
+}
+
+.contact {
+  text-align: center;
+}
+
