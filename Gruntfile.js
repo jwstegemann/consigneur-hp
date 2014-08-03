@@ -167,7 +167,7 @@ module.exports = function (grunt) {
             },
             scss: {
                 options: {
-                    sourcemap: true
+                
                 }
             }
         },
@@ -310,8 +310,15 @@ module.exports = function (grunt) {
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
-                        'bower_components/sass-bootstrap/fonts/*.*'
+                        'bower_components/sass-bootstrap/fonts/*.*',
+                        'bower_components/font-awesome/fonts/*.*'
                     ]
+                }, {
+                  expand: true,
+                  dot: true,
+                  cwd: '<%= yeoman.app %>/bower_components/font-awesome/fonts',
+                  dest: '<%= yeoman.dist %>/fonts',
+                  src: '*'
                 }]
             },
             styles: {
