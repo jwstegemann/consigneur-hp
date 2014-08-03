@@ -164,6 +164,11 @@ module.exports = function (grunt) {
                 options: {
                     debugInfo: true
                 }
+            },
+            scss: {
+                options: {
+                    sourcemap: true
+                }
             }
         },
 

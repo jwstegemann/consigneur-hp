@@ -1,16 +1,73 @@
+
+@import 'colors';
+@import 'material';
+
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+$font: 'Roboto', sans-serif;
+$text-grey: rgba(0,0,0,0.54);
+
+$navbar-height: 79px;
+$navbar-default-bg: white;
+$navbar-margin-bottom: 0;
+$navbar-default-toggle-border-color: none;
+
+$navbar-default-color: $text-grey;
+$navbar-default-link-color: $text-grey;
+$navbar-default-link-active-color: $text-grey;
+
+/*
+ * Colors
+ */
+
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+
 
 body {
-    padding: 0;
-    font-size: 16px;
+  padding: 0;
+  font-size: 16px;
+  font-family: $font;
+  font-weight: 300;
+  background: #f9f9f9;
+  color: $text-dark;
+}
+
+.navbar {
 }
 
 .navbar-logo {
-  padding-top: 0.25em !important;
-  padding-bottom: 0.25em !important;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 12px;
 }
 
+.main-container {
+  background: white;
+  border: $card-border;
+}
 
+.uvp {
+  font-size: 34px;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: $text-dark;
+}
+
+.narrative {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: $text-grey;
+}
+
+.title-screen {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 40px;
+  box-shadow: $whiteframe-shadow-z2;
+}
